@@ -1,0 +1,236 @@
+/* Grundlayout */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Einkaufsliste Inputs */
+#itemInput {
+    width: calc(100% - 120px);
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#addBtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: background-color 0.2s;
+}
+#addBtn:hover {
+    background-color: #2980b9;
+}
+
+#fabianAdd {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: background-color 0.2s;
+}
+#fabianAdd:hover {
+    background-color: #2980b9;
+}
+
+#annaAdd {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: background-color 0.2s;
+}
+
+#annaAdd:hover {
+    background-color: #2980b9;
+}
+
+#clearDone {
+    background-color: #e74c3c;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+#clearDone:hover {
+    background-color: #c0392b;
+}
+
+#clearAllBtn {
+    background-color: #e74c3c;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+#clearAllBtn:hover {
+    background-color: #c0392b;
+}
+
+/* Einkaufsliste */
+ul#list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+ul#list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+ul#list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Abgehakte Einträge */
+.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Ergebnisbereich Rechnungen bleibt unverändert */
+#result p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Popup Hintergrund */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Inhalt */
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Popup Buttons */
+.popup-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-buttons button {
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#confirmDelete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#confirmDelete:hover {
+    background-color: #c0392b;
+}
+
+#cancelDelete {
+    background-color: #bdc3c7;
+    color: black;
+}
+
+#cancelDelete:hover {
+    background-color: #95a5a6;
+}
+/*neuer absatz*/
+button {
+    margin-top: 10px;
+}
+
+/* Responsive für Handy */
+@media (max-width: 500px) {
+    #itemInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #addBtn {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    #fabianAdd {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    #annaAdd {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #clearDone {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    input[type="number"] {
+        font-size: 18px;
+    }
+}
